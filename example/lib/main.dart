@@ -64,6 +64,7 @@ class _MyAppState extends State<MyApp> {
                   onCountryChanged: (country) {
                     print('Country changed to: ' + country.name);
                   },
+                  showCounter: false,
                 ),
                 SizedBox(
                   height: 10,

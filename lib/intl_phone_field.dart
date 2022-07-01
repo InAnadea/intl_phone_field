@@ -384,7 +384,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
       onFieldSubmitted: widget.onSubmitted,
       decoration: widget.decoration.copyWith(
         prefixIcon: _buildFlagsButton(),
-        counterText: !widget.enabled && widget.showCounter ? '' : null,
+        counterText: !widget.enabled || !widget.showCounter ? '' : null,
       ),
       style: widget.style,
       onSaved: (value) {
